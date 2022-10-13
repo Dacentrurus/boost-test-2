@@ -16,8 +16,3 @@ $pdo = new PDO(
     $psw,
     array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
 );
-
-$query = $pdo->prepare("SELECT DATABASE();");
-$query->execute();
-
-var_dump($query->fetch());
